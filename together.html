@@ -1,0 +1,74 @@
+<html lang="pt-br">
+<head>
+
+ <!--Permitir caracteres especieis -->
+ <meta charset="utf-8"/>
+ 
+  <!-- script do jogo -->
+  <script src="codeTwoPlayers.js"></script> 
+  
+  <!-- Formataç?o(Design) do jogo -->
+  <link rel="stylesheet" href="style.css"/> 
+  
+  <!-- BootStrap --->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.js/1.14.7/umd/popper.min.js"></script>
+
+</head>
+<body class="bg-dark" onLoad="iniciarVariaveis()">
+
+  <!-- Infoormaç?es sobre o andamento do jogo -->
+  <div id="infoPlacar">
+
+   <!-- Placa do jogo --> 
+   <label id="tituloPlacar" class="btn btn-secondary btn-block text-white text-uppercase font-weight-bold">Placar</Label>
+
+    <!-- Vez de realizar  a jogada --> 
+   <p id="turnoPlayer" class="btn btn-primary btn-block text-white text-uppercase font-weight-bold">Jogo da Velha 1.0</p>
+
+   <!-- Pontuaç?o do player X -->
+   <p id="placarGameX"></p>
+   
+   <!-- Pontuaç?o do player X -->
+   <p id="placarGameO"></p>
+   
+  </div>
+  
+ <!-- corpo do jogo -->
+ <center><div id="bodyGame">
+   
+  <!-- Linha 1 -->
+   <p>
+   <input type="button" class="btn btn-primary btn-xl text-uppercase font-weight-bold" id="btnActionUm"   onClick="verificaBotaoGerouAcao(0)" value=""/>
+   <input type="button" class="btn btn-primary btn-xl text-uppercase font-weight-bold" id="btnActionDois" onClick="verificaBotaoGerouAcao(1)" value=""/>
+   <input type="button" class="btn btn-primary btn-xl text-uppercase font-weight-bold" id="btnActionTres" onClick="verificaBotaoGerouAcao(2)" value=""/>
+   </p>
+  
+  <!-- Linha 2 -->
+   <p>
+   <input type="button" class="btn btn-primary btn-xl text-uppercase font-weight-bold" id="btnActionQuatro" onClick="verificaBotaoGerouAcao(3)" value=""/>
+   <input type="button" class="btn btn-primary btn-xl text-uppercase font-weight-bold" id="btnActionCinco"  onClick="verificaBotaoGerouAcao(4)" value=""/>
+   <input type="button" class="btn btn-primary btn-xl text-uppercase font-weight-bold" id="btnActionSeis"   onClick="verificaBotaoGerouAcao(5)" value=""/>
+   </p>
+  
+   <!-- Linha 3 -->
+   <p>
+   <input type="button" class="btn btn-primary btn-xl text-uppercase font-weight-bold" id="btnActionSete" onClick="verificaBotaoGerouAcao(6)" value=""/>
+   <input type="button" class="btn btn-primary btn-xl text-uppercase font-weight-bold" id="btnActionOito" onClick="verificaBotaoGerouAcao(7)" value=""/>
+   <input type="button" class="btn btn-primary btn-xl text-uppercase font-weight-bold" id="btnActionNove" onClick="verificaBotaoGerouAcao(8)" value=""/>
+   </p>
+  
+   <!--Info player -->
+   <input type="hidden" value="X" id="lblInfoPlayer"/> <!-- Player que esta jogando atualmente oscilando entre X e O -->
+  
+  </div>
+  
+  <!-- Opç?es do jogo -->
+  <div id="opcaoGame">
+    
+  </div></center>
+  
+</body>
+</html>

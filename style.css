@@ -1,0 +1,10 @@
+.btn-xl {
+    padding: 10px 20px;
+    border-radius: 10px;
+    width:15%;
+    height:16%;
+}
+
+input.btn-xl{
+    font-size: 50px;	
+}
