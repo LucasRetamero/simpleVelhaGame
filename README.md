@@ -6,8 +6,8 @@ Jogo da velha simplista feito em javascript !(Basic game make in javascript lang
 ## Index
 ![Image of Yaktocat](https://github.com/LucasRetamero/simpleVelhaGame/blob/master/img/index.png)
 
-## Solo
+## 1 Player
 ![Image of Yaktocat](https://github.com/LucasRetamero/simpleVelhaGame/blob/master/img/playSolo.png)
 
-## Together anyone
+## 2 Players
 ![Image of Yaktocat](https://github.com/LucasRetamero/simpleVelhaGame/blob/master/img/playTogether.png)
